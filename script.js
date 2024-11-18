@@ -129,9 +129,24 @@ resul = vari.slice(2, 5);
 console.log(resul); */
 
 //metodos de array
+//           0  1  2  3  4  5  6   7  8   9  10  11
 
-let array = [1, 2, 3, 4, 2, 35, 5, 100, 1, 2];
-
-const resultado = array.fill(3, 2);
-
-console.log(resultado);
+let array = [
+  {
+    id: 1,
+    name: "Luis",
+  },
+  {
+    id: 2,
+    name: "Maria",
+  },
+  {
+    id: 3,
+    name: "Pedro",
+  },
+];
+for (const item of array) {
+  console.log(item);
+  console.log(item.id);
+  console.log(item.name);
+}
