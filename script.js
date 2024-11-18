@@ -130,7 +130,7 @@ console.log(resul); */
 
 //metodos de array
 //           0  1  2  3  4  5  6   7  8   9  10  11
-
+/* 
 let array = [
   {
     id: 1,
@@ -149,4 +149,34 @@ for (const item of array) {
   console.log(item);
   console.log(item.id);
   console.log(item.name);
-}
+} */
+
+/* let fecha = new Date();
+let meses = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+//          meses.10
+console.log(meses[fecha.getMonth()]);
+
+console.log(fecha);
+console.log(fecha.getDate());
+console.log(fecha.getMonth() + 1); //toma el indice del mes
+console.log(fecha.getFullYear());
+
+fecha.setFullYear(2030);
+console.log(fecha); */
+
+const numero = 2.8;
+const redondeo = Math.trunc(Math.PI);
+console.log(Math.round(Math.PI));
