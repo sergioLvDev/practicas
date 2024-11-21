@@ -176,7 +176,67 @@ console.log(fecha.getFullYear());
 
 fecha.setFullYear(2030);
 console.log(fecha); */
-
+/* 
 const numero = 2.8;
 const redondeo = Math.trunc(Math.PI);
 console.log(Math.round(Math.PI));
+
+const tipo = typeof redondeo;
+const tipo2 = typeof numero;
+const tipo3 = typeof "hola";
+
+console.log(tipo, tipo2, tipo3); */
+
+// ciclos
+
+/* const a = "hola mundo";
+console.log(a);
+
+let array = ["HTML", "CSS", "JavaScript", "React", "Angular", "VueJS"];
+const span = document.getElementById("span");
+let texto = " ";
+for (let index = 0; index < array.length; index++) {
+  texto += array[index];
+  if (index < array.length - 1) {
+    texto += ", ";
+  }
+}
+span.textContent = texto;
+console.log(texto);
+console.log(array);
+console.log(array.length);
+
+const alumno = {
+  id: 1,
+  name: "Luis",
+  apellido: "Perez",
+};
+
+console.log("altura" in alumno);
+
+for (const clave in alumno) {
+  console.log(clave, alumno[clave]);
+} */
+
+/* 
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let nuevoArray = array.map((item) => item * 2);
+
+console.log(array);
+console.log(nuevoArray); */
+
+/* let res = "n";
+let numtotal = 0;
+while (res === "n") {
+  let num = prompt("Ingrese un numero de 1 a 10");
+  const tipo = typeof num;
+  console.log(num, tipo);
+  let numing = parseInt(num);
+  const tipo2 = typeof numing;
+  console.log(numing, tipo2);
+  numtotal = numtotal + numing;
+  console.log(numtotal);
+  alert("El numero es: " + numing + " y el total es: " + numtotal);
+  res = prompt("desea salir escriba s/n");
+} */
