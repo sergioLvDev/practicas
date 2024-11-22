@@ -240,3 +240,120 @@ while (res === "n") {
   alert("El numero es: " + numing + " y el total es: " + numtotal);
   res = prompt("desea salir escriba s/n");
 } */
+
+/////////////////// EJEMPLO SIN SET
+/* let array = [1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 5];
+
+// item                                     1  1  2  2  2  2  3  3  4  4  4  4  4  4  5
+// index                                    0  1  2  3  4  5  6  7  8  9 10  11 12 13 14
+// array.indexOf(item) 1aparicion           0  0  2  2  2  2  6  6  8  8  8  8  8  8  14
+//                                         si    si           si    si                si
+
+let nuevoArray = array.filter((item, index) => {
+  return array.indexOf(item) === index;
+});
+
+console.log(array);
+console.log(nuevoArray); 
+
+// SET !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+let array = [1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 5];
+let unico = new Set(array);
+let nuevoArray = [...unico];
+
+console.log(array);
+console.log(unico);
+console.log(nuevoArray); */
+
+/////////////////// MAP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/* let mapa = new Map([
+  ["Computadoras", 10],
+  ["Celulares", 20],
+  ["Tablets", 30],
+  ["Portatiles", 40],
+]);
+
+mapa.set("Impresoras", 50);
+mapa.delete("Tablets");
+console.log(mapa);
+console.log(mapa.size);
+
+let verdadero = mapa.has("Computadoras");
+console.log(verdadero);
+
+let array = [...mapa];
+console.log(array);
+
+let arrayMapa = Array.from(mapa);
+console.log(arrayMapa); */
+/* 
+let mapeo = new Map([
+  [1, "Luis"],
+  [2, "Maria"],
+  [3, "Pedro"],
+]);
+let array = Array.from(mapeo);
+for (const [clave, valor] of mapeo) {
+  console.log(clave, valor);
+}
+console.log(array); */
+// el new map se utiliza para crear un objeto de tipo mapa que es una coleccion de pares clave-valor que permite almacenar y acceder a datos de manera organizada para una mayor eficiencia en la manipulacion de datos.
+
+///////////////typeof !!!!!!!!!!!!
+/* let variable = NaN;
+const tipo = typeof variable;
+console.log(tipo);//Number */
+
+/* let variable = "hola";
+const tipo = typeof variable;
+console.log(tipo); //string
+ */
+///////////////////instanceof !!!!!!!!!!!!
+/* let variable = new Date();
+const tipo = typeof variable;
+console.log(tipo); //object
+console.log(variable instanceof Date); //true
+
+let e = [1, 2, 3];
+console.log(e instanceof Array); //true
+ */
+
+/////////////////Cambiar de tipo de Datos !!!!!!!!!!!111
+/* let variable = "3.14";
+
+console.log(variable, typeof variable); // 3.14 string
+
+console.log(Number(variable), typeof Number(variable)); // 3.14 number
+
+console.log(parseInt(variable), typeof parseInt(variable)); // 3 number
+
+console.log(parseFloat(variable), typeof parseFloat(variable)); // 3.14 number
+
+let variable2 = +"3.14";
+
+console.log(variable2, typeof variable2); // 3.14 number */
+
+/* let b = 3.14;
+
+console.log(b, typeof b); // 3.14 number
+
+console.log(String(b), typeof String(b)); // 3.14 string
+
+let c = b.toString();
+
+console.log(c, typeof c); // 3.14 string */
+
+//////////Nan !!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/* let variable = Number("hola");
+
+console.log(variable); // Nan // NaN es un valor especial que indica que un valor no es un numero valido.
+console.log(typeof variable); //number
+ */
+
+//////////////vacios /////////////////!!!!!!!!!!!
+/* let variable = Number("");
+
+console.log(variable);
+console.log(typeof variable);
+ */
