@@ -357,3 +357,36 @@ console.log(typeof variable); //number
 console.log(variable);
 console.log(typeof variable);
  */
+
+///////////////Number to Boolean !!!!!!!!!!
+/* let h = Boolean(0);
+let i = Boolean(1);
+let j = Boolean(NaN);
+let k = Boolean("");
+let l = Boolean(null);
+let m = Boolean(undefined);
+let n = Boolean("Hola");
+
+console.log(h, typeof h); //false boolean
+console.log(i, typeof i); //true boolean
+console.log(j, typeof j); //false boolean
+console.log(k, typeof k); //false boolean
+console.log(l, typeof l); //false boolean
+console.log(m, typeof m); //false boolean
+console.log(n, typeof n); //true boolean
+let ricardo = 0; // el valor booleano de 0 es falso
+
+if (ricardo || ricardo == 0) {
+  console.log(`verdadero y el valor es:  ${ricardo}`, typeof ricardo); // sale por true: 0 number
+} else {
+  console.log(`falso y el valor es:  ${ricardo}`, typeof ricardo);
+}
+ */
+
+//////////////Boolean to String !!!!!!!!!!!
+
+/* let j = String(true);
+console.log(j, typeof j); //true string
+let k = true.toString();
+console.log(k, typeof k); //true string
+ */
