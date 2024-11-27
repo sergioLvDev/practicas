@@ -390,3 +390,84 @@ console.log(j, typeof j); //true string
 let k = true.toString();
 console.log(k, typeof k); //true string
  */
+
+//////////////////REGEX !!!!!!!!!!!!!!!!!!!
+/* let texto = "Curso de SERGIE JavaScript de sergie CODE SERGIE";
+
+let busqueda = texto.match(/SERGIE/gi);
+console.log(busqueda); // ['SERGIE', 'sergie', 'SERGIE'] devuelve un array con las coincidencias en el string en mayusculas y minusculas
+
+let index = texto.indexOf("SERGIE");
+console.log(index); // 23 muestra la posicion donde se encuentra el texto en el string
+
+let patern = /SERGIE/gi;
+let res = patern.test(texto);
+console.log(res); //true */
+
+////////////////try and catch !!!!!!!
+/* try {
+  let numero = "hola";
+  console.log(typeof numero); // string
+  let res = 10 / numero;
+  console.log(res); // NaN porque la variable numero no es un numero
+  throw new Error("El valor no es un número.");
+} catch (error) {
+  console.error(`Se produjo un error: ${error.message}`); // Se produjo un error: El valor no es un número.
+} finally {
+  console.log("El bloque try-catch ha finalizado.");
+}
+
+try {
+  let numero = parseInt("abc"); // Esto intentará convertir "abc" en un número, pero fallará.
+  if (isNaN(numero)) {
+    throw new Error("El valor no es un número válido.");
+  }
+  console.log(`El número es: ${numero}`);
+} catch (error) {
+  console.error(`Se produjo un error: ${error.message}`);
+} finally {
+  console.log("El bloque try-catch ha finalizado.");
+} */
+
+////////////////// callback !!!!!!!
+/* 
+function mostrarConsola(res) {
+  console.log(res);
+}
+function calcular(num1, num2, mostrarConsola) {
+  let res = num1 + num2;
+  console.log(res);
+  mostrarConsola(res);
+}
+
+calcular(10, 20, mostrarConsola);
+
+function procesarDato(dato, callback) {
+  console.log("Procesando dato...");
+  setTimeout(() => {
+    let resultado = dato * 2; // Simula un procesamiento
+    callback(resultado); // Llama al callback con el resultado
+  }, 3000); // Simula una demora de 1 segundo
+}
+
+function mostrarRes(resultado) {
+  console.log(`El resultado es: ${resultado}`);
+}
+// Llamada a la función con un callback
+procesarDato(5, mostrarRes); */
+
+///////////////////////Fetch !!!!!!!!!!!
+
+/////Get - Obtener informacion
+
+/* let urlBase = "https://jsonplaceholder.typicode.com";
+let query = "comments?postId=5";
+
+fetch(`${urlBase}/${query}`)
+  .then((response) => response.json())
+  .then((data) => console.log(data)); */
+
+/////Post - Enviar informacion
+/////Put - Actualizar informacion
+/////Delete - Eliminar informacion
+/////Patch - Actualizar informacion parcial
