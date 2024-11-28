@@ -456,16 +456,58 @@ function mostrarRes(resultado) {
 // Llamada a la función con un callback
 procesarDato(5, mostrarRes); */
 
+//////////////////Promesas !!!!!!!
+/* let promesa = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve("Promesa resuelta");
+    } else {
+      reject("Promesa rechazada");
+    }
+  }, 1000);
+});
+let promesa2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (false) {
+      resolve("Promesa2 resuelta");
+    } else {
+      reject("Promesa2 rechazada");
+    }
+  }, 2000);
+});
+
+async function miFuncion() {
+  try {
+    let res = await promesa;
+    console.log(res); // Promesa resuelta
+
+    let res2 = await promesa2;
+    console.log(res2);
+  } catch (error) {
+    console.error("Error Capturado: ", error); // Error Capturado:  Promesa rechazada
+  }
+}
+miFuncion(); */
+
+/* promesa
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  }); */
+///asinc y await
+
 ///////////////////////Fetch !!!!!!!!!!!
 
 /////Get - Obtener informacion
 
-/* let urlBase = "https://jsonplaceholder.typicode.com";
+let urlBase = "https://jsonplaceholder.typicode.com";
 let query = "comments?postId=5";
 
 fetch(`${urlBase}/${query}`)
   .then((response) => response.json())
-  .then((data) => console.log(data)); */
+  .then((data) => console.log(data));
 
 /////Post - Enviar informacion
 /////Put - Actualizar informacion
