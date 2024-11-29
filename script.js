@@ -502,14 +502,33 @@ miFuncion(); */
 
 /////Get - Obtener informacion
 
-let urlBase = "https://jsonplaceholder.typicode.com";
-let query = "comments?postId=5";
+/* let urlBase = "https://jsonplaceholder.typicode.com";
+let query = "photos/10"; //10 es el id
 
 fetch(`${urlBase}/${query}`)
   .then((response) => response.json())
-  .then((data) => console.log(data));
-
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+ */
 /////Post - Enviar informacion
+let urlBase = "https://jsonplaceholder.typicode.com";
+let query = "users";
+
+fetch(`${urlBase}/${query}`, {
+  method: "POST",
+  body: JSON.stringify({
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+
 /////Put - Actualizar informacion
 /////Delete - Eliminar informacion
 /////Patch - Actualizar informacion parcial
