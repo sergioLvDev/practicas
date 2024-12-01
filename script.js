@@ -511,19 +511,21 @@ fetch(`${urlBase}/${query}`)
   .catch((error) => console.log(error));
  */
 /////Post - Enviar informacion
+
 let urlBase = "https://jsonplaceholder.typicode.com";
-let query = "users";
+let query = "comments";
+let data = {
+  userId: 1, //id del usuario
+  title: "New Post",
+  body: "This is a new post",
+};
 
 fetch(`${urlBase}/${query}`, {
   method: "POST",
-  body: JSON.stringify({
-    title: "foo",
-    body: "bar",
-    userId: 1,
-  }),
   headers: {
     "Content-type": "application/json; charset=UTF-8",
   },
+  body: JSON.stringify(data),
 })
   .then((response) => response.json())
   .then((data) => console.log(data))
